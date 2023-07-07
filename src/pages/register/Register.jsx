@@ -2,6 +2,7 @@ import axios from "axios";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
+
 import "./register.scss";
 
 export default function Register() {
@@ -11,6 +12,7 @@ export default function Register() {
   const [profile, setProfilePic] = useState("https://firebasestorage.googleapis.com/v0/b/netflix-f3af8.appspot.com/o/users%2Fno_image.png?alt=media&token=f8044609-d880-4171-b9fc-dc32e184a59c");
   const [temp, setTemp] = useState("");
   const usenavigate = useNavigate();
+
 
   const handleStart = () => {
     
@@ -67,6 +69,7 @@ export default function Register() {
       if (result.data.success) {
         
         alert(result.data.message)
+        
         usenavigate("/login");
       }
       else{

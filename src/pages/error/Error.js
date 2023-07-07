@@ -10,7 +10,7 @@ const Error = () => {
         <section className='error-page-section'>
           <div>404</div>
           <p>Oops ! Page Not Found</p>
-          <Link to="/login">Go Back</Link>
+          <Link to="/register">Go Back</Link>
 
         </section>
  
